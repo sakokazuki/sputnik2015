@@ -1,4 +1,147 @@
-@import style2
+@import mixin
 
 body
   background-color: #fff
+  min-width: 1280px
+
+#container
+  position: relative
+
+header
+  padding: 15px 0
+
+  .header-img
+    margin: 0 auto
+    +size(148,38)
+    //kesu
+    text-align: center
+    background-color: #eee
+
+#menu
+  position: absolute
+  top: 24px
+  right: 53px
+  z-index: 10
+  text-align: right
+
+  li
+    margin-bottom: 13px
+    background-color: #000
+    color: #fff
+
+  .menu-img
+    +size(37, 30)
+    margin: 0 0 35px 104px
+
+    //kesu
+    background-color: #eee
+
+  
+#main
+  width: 1233px
+  margin: 0 auto
+
+.first-view
+  position: relative
+  margin-bottom: 17px
+
+  .img-container
+    +size(1141, 665)
+    margin: 0 auto
+
+    img
+      +size(1141, 665)
+
+  .top-text
+    color: #fff
+    position: absolute
+    top: 69px
+    left: 108px
+
+.news
+  width: 641px
+  margin: 0 auto
+  border-top: solid 2px #7F7C7C
+  border-bottom: solid 2px #7F7C7C
+  text-align: center
+  padding: 11px 0
+
+
+.kiji-img
+  width: 476px
+  height: 73px
+  margin: 73px auto 54px
+  //kesu
+  text-align: center
+  background-color: #eee
+
+.page
+  background-image: url("../img/kiji.jpg")
+  background-repeat: no-repeat
+  +size(1233, 315)
+  overflow: hidden
+  display: block
+  margin-bottom: 25px
+  color: #fff
+
+  .title-layout0
+    background-color: #000
+    +size(341, 116)
+    margin: 107px auto 0
+    text-align: center
+
+  .title-layout1
+    +size(341, 116)
+    margin: 83px auto 0
+    text-align: center
+
+  .title-layout2
+    +size(341, 116)
+    margin: 61px auto 0
+    text-align: center
+    border: solid 10px #fff
+
+  .title-layout3
+    +size(1100, 79)
+    margin: 129px auto 0
+    text-align: center
+
+    .date
+      text-align: left
+    .category, .title
+      text-align: right
+    .border
+      border-top: solid 1px #fff
+
+
+.yomikomi
+  +size(152, 144)
+  margin: 28px auto 98px
+
+
+  //kesu
+  text-align: center
+  background-color: #eee
+
+.introduce
+  +size(674, 270)
+  margin: 0 auto 40px
+  padding-top: 38px
+  text-align: center
+
+  //kesu
+  background-color: #eee
+
+  h2
+    display: none
+
+
+
+
+
+
+
+
+
+
+
