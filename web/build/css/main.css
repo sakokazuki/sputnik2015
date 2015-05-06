@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body {
+  background-color: #fff;
+  min-width: 1280px;
+  font-family: Helvetica, "Hiragino Kaku Gothic ProN", sans-serif; }
+
+#container {
+  position: relative; }
+
+header {
+  padding: 15px 0; }
+  header .header-img {
+    margin: 0 auto;
+    width: 148px;
+    height: 38px;
+    text-align: center;
+    background-color: #eee; }
+
+#menu {
+  position: absolute;
+  top: 24px;
+  right: 53px;
+  z-index: 10;
+  text-align: right; }
+  #menu li {
+    margin-bottom: 13px;
+    background-color: #000;
+    color: #fff; }
+  #menu .menu-img {
+    width: 37px;
+    height: 30px;
+    margin: 0 0 35px 104px;
+    background-color: #eee; }
+
+#main {
+  width: 1233px;
+  margin: 0 auto; }
+
+.first-view {
+  position: relative;
+  margin-bottom: 17px; }
+  .first-view .img-container {
+    width: 1141px;
+    height: 665px;
+    margin: 0 auto; }
+    .first-view .img-container img {
+      width: 1141px;
+      height: 665px; }
+  .first-view .top-text {
+    color: #fff;
+    position: absolute;
+    top: 69px;
+    left: 108px;
+    width: 372px;
+    height: 278px;
+    background-color: rgba(255, 255, 255, 0.8); }
+
+.news {
+  width: 641px;
+  margin: 0 auto;
+  border-top: solid 2px #7F7C7C;
+  border-bottom: solid 2px #7F7C7C;
+  text-align: center;
+  padding: 11px 0; }
+
+.introduce {
+  width: 651px;
+  height: 269px;
+  margin: 60px auto 114px;
+  text-align: center;
+  position: relative;
+  background-color: #eee; }
+  .introduce h2 {
+    display: none; }
+  .introduce .text_container {
+    position: absolute;
+    bottom: 0;
+    font-family: "ヒラギノ明朝 Pro W3", serif;
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 32px; }
+  .introduce .text_1 {
+    margin-bottom: 32px; }
+
+.kiji-img {
+  width: 476px;
+  height: 73px;
+  margin: 0px auto 54px;
+  text-align: center;
+  background-color: #eee; }
+
+.page {
+  background-image: url("../img/kiji.jpg");
+  background-repeat: no-repeat;
+  width: 1233px;
+  height: 315px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 25px;
+  color: #fff; }
+  .page .title-layout0 {
+    background-color: #000;
+    width: 341px;
+    height: 97px;
+    margin: 107px auto 0;
+    padding-top: 19px;
+    text-align: center;
+    letter-spacing: 1px; }
+    .page .title-layout0 .date {
+      font-size: 13px;
+      margin-bottom: 5px;
+      font-family: "HelveticaNeue-Light"; }
+    .page .title-layout0 .category {
+      font-size: 15.17px;
+      margin-bottom: 5px;
+      font-weight: 600;
+      letter-spacing: 1.5px; }
+    .page .title-layout0 .title {
+      font-size: 26.77px;
+      font-weight: 600;
+      letter-spacing: 3px; }
+  .page .title-layout1 {
+    width: 351px;
+    height: 109px;
+    margin: 89px auto 0;
+    padding-top: 14px;
+    text-align: center;
+    letter-spacing: 1px; }
+    .page .title-layout1 .date {
+      font-size: 15px;
+      margin-bottom: 8px;
+      font-family: "HelveticaNeue-Bold"; }
+    .page .title-layout1 .category {
+      font-size: 15.17px;
+      margin-bottom: 3px;
+      font-weight: 600;
+      letter-spacing: 1.5px; }
+    .page .title-layout1 .title {
+      font-size: 25.8px;
+      font-weight: 600;
+      letter-spacing: 3px; }
+  .page .title-layout2 {
+    width: 272px;
+    height: 189px;
+    margin: 61px auto 0;
+    text-align: center;
+    border-top: solid 10px #fff;
+    border-bottom: solid 10px #fff; }
+    .page .title-layout2 .date {
+      margin-top: 33px;
+      font-size: 11px;
+      margin-bottom: 3px; }
+    .page .title-layout2 .category {
+      font-size: 16px;
+      margin-bottom: 13px;
+      font-weight: 300;
+      letter-spacing: 1.5px; }
+    .page .title-layout2 .title {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 3px; }
+  .page .title-layout3 {
+    width: 1100px;
+    height: 79px;
+    margin: 129px auto 0;
+    text-align: center; }
+    .page .title-layout3 .date {
+      text-align: left;
+      font-size: 13px;
+      margin-bottom: 5px; }
+    .page .title-layout3 .category {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 5px; }
+    .page .title-layout3 .title {
+      text-align: right;
+      font-size: 25px;
+      letter-spacing: 3px; }
+    .page .title-layout3 .border {
+      border-top: solid 1px #fff; }
+
+.yomikomi {
+  width: 152px;
+  height: 144px;
+  margin: 28px auto 56px;
+  text-align: center;
+  background-color: #eee; }
+
+/*# sourceMappingURL=main.css.map */
