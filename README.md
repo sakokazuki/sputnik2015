@@ -4,7 +4,7 @@
 #ビルド手順
 cd web
 sh build.sh
-で./appをルートにlocalhost:8000にサーバー立ち上がる(はず)
+で./buildをルートにlocalhost:8000にサーバー立ち上がる(はず)
 
 #killallよくわかんない問題
 killallよくわかんないのでpsでPID確認して

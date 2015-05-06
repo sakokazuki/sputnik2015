@@ -1,0 +1,101 @@
+@import mixin
+@import common
+
+#main
+  width: 1140px
+  margin: 0 auto
+
+.first-view
+  position: relative
+  margin-bottom: 10px
+
+  .img-container
+    +size(1140, 816)
+    margin: 0 auto
+
+    img
+      +size(1140, 816)
+
+  .top-text
+    +size(696, 212)
+    color: #fff
+    position: absolute
+    top: 226px
+    left: 223px
+    background-color: rgba(0, 0, 0, 1)
+    text-align: center
+    letter-spacing: 1px    
+
+    .date
+      font-size: 14px
+      margin-top: 52px
+      margin-bottom: 8px
+      // font-family: "HelveticaNeue-Light"
+    .category
+      font-size: 16px
+      margin-bottom: 10px
+      font-weight: 300
+      letter-spacing: 1.5px
+    .title
+      font-size: 32px
+      font-weight: 600
+      letter-spacing: 3px
+
+.scroll
+  +size(57, 38)
+  margin: 0 auto 57px
+
+  //kesu
+  background-color: #eee
+
+.article_autor
+  width: 1140px
+  background-image: url("../img/top0.jpg")
+  padding: 58px 0 42px
+
+  .article_container
+    width: 700px
+    background-color: #fff
+    margin: 0px auto 0px
+    padding: 46px 37px 61px
+
+    .text_footer
+      margin-top: 30px
+
+      p
+
+        text-align: center
+
+      .choose_box
+        margin: 21px 74px 26px
+        color: #fff
+        p
+          margin: 4px
+      .choose0
+        +size(251, 32)
+        display: inline-block
+        background-color: #ED1C24
+        margin-right: 45px
+      .choose1
+        +size(251, 32)
+        display: inline-block
+        background-color: #0071BC
+
+      .border
+        border-top: solid 1px #000
+
+      .share
+        margin-top: 18px
+
+.back
+  +size(57, 38)
+  margin: 10px auto
+  //kesu
+  background-color: #eee
+
+
+
+
+
+
+
