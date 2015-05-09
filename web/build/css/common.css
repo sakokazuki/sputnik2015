@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'size'.
-        on line 14 of app/sass/common.sass, in `size'
-        from line 14 of app/sass/common.sass
+        on line 17 of app/sass/common.sass, in `size'
+        from line 17 of app/sass/common.sass
 
-9: header
-10:   padding: 15px 0
-11: 
-12:   .header-img
-13:     margin: 0 auto
-14:     +size(148,38)
-15:     //kesu
-16:     text-align: center
-17:     background-color: #eee
-18: 
-19: #menu
+12: header
+13:   padding: 15px 0
+14: 
+15:   .header-img
+16:     margin: 0 auto
+17:     +size(148,38)
+18:     background-image: url(../img/header_img.png)
+19:     background-size: cover
+20:     //kesu
+21:     // text-align: center
+22:     // background-color: #eee
 
 Backtrace:
-app/sass/common.sass:14:in `size'
-app/sass/common.sass:14
+app/sass/common.sass:17:in `size'
+app/sass/common.sass:17
 /Users/kazukisakou/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Users/kazukisakou/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/kazukisakou/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
@@ -82,4 +82,4 @@ app/sass/common.sass:14
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'size'.\A         on line 14 of app/sass/common.sass, in `size'\A         from line 14 of app/sass/common.sass\A \A 9: header\A 10:   padding: 15px 0\A 11: \A 12:   .header-img\A 13:     margin: 0 auto\A 14:     +size(148,38)\A 15:     //kesu\A 16:     text-align: center\A 17:     background-color: #eee\A 18: \A 19: #menu"; }
+  content: "Error: Undefined mixin 'size'.\A         on line 17 of app/sass/common.sass, in `size'\A         from line 17 of app/sass/common.sass\A \A 12: header\A 13:   padding: 15px 0\A 14: \A 15:   .header-img\A 16:     margin: 0 auto\A 17:     +size(148,38)\A 18:     background-image: url(../img/header_img.png)\A 19:     background-size: cover\A 20:     //kesu\A 21:     // text-align: center\A 22:     // background-color: #eee"; }
