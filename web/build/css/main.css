@@ -3,6 +3,8 @@ body {
   background-color: #fff;
   min-width: 1280px;
   font-family: Helvetica, "Hiragino Kaku Gothic ProN", sans-serif; }
+  body h2 {
+    display: none; }
 
 #container {
   position: relative; }
@@ -13,8 +15,8 @@ header {
     margin: 0 auto;
     width: 148px;
     height: 38px;
-    text-align: center;
-    background-color: #eee; }
+    background-image: url(../img/header_img.png);
+    background-size: cover; }
 
 #menu {
   position: absolute;
@@ -70,6 +72,11 @@ header {
   text-align: center;
   position: relative;
   background-color: #eee; }
+  .introduce .introduce_title {
+    width: 651px;
+    height: 86px;
+    margin: 0 auto;
+    background-color: #ddd; }
   .introduce h2 {
     display: none; }
   .introduce .text_container {
@@ -82,12 +89,19 @@ header {
   .introduce .text_1 {
     margin-bottom: 32px; }
 
-.kiji-img {
-  width: 476px;
-  height: 73px;
-  margin: 0px auto 54px;
-  text-align: center;
-  background-color: #eee; }
+.kiji_title {
+  width: 359px;
+  height: 90px;
+  margin: 0px auto 54px; }
+  .kiji_title .kiji-img {
+    display: inline-block;
+    width: 201px;
+    height: 90px;
+    background-image: url(../img/tokusyu_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    vertical-align: top; }
 
 .page {
   background-image: url("../img/kiji.jpg");
@@ -182,8 +196,6 @@ header {
 .yomikomi {
   width: 152px;
   height: 144px;
-  margin: 28px auto 56px;
-  text-align: center;
-  background-color: #eee; }
+  margin: 28px auto 56px; }
 
 /*# sourceMappingURL=main.css.map */

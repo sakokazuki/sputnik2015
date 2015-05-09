@@ -3,6 +3,9 @@ body
   min-width: 1280px
   font-family: Helvetica, "Hiragino Kaku Gothic ProN", sans-serif
 
+  h2
+    display: none
+
 #container
   position: relative
 
@@ -12,9 +15,11 @@ header
   .header-img
     margin: 0 auto
     +size(148,38)
+    background-image: url(../img/header_img.png)
+    background-size: cover
     //kesu
-    text-align: center
-    background-color: #eee
+    // text-align: center
+    // background-color: #eee
 
 #menu
   position: absolute

@@ -44,6 +44,13 @@
   //kesu
   background-color: #eee
 
+  .introduce_title
+    +size(651, 86)
+    margin: 0 auto
+
+    //kesu
+    background-color: #ddd
+
   h2
     display: none
 
@@ -58,13 +65,20 @@
   .text_1
     margin-bottom: 32px
 
-.kiji-img
-  width: 476px
-  height: 73px
+.kiji_title
+  +size(359, 90)
   margin: 0px auto 54px
-  //kesu
-  text-align: center
-  background-color: #eee
+
+
+
+  .kiji-img
+    display: inline-block
+    +size(201, 90)
+    background-image: url(../img/tokusyu_img.png)
+    background-repeat: no-repeat
+    background-size: contain
+    margin: 0 auto
+    vertical-align: top
 
 .page
   background-image: url("../img/kiji.jpg")
@@ -164,9 +178,6 @@
   +size(152, 144)
   margin: 28px auto 56px
 
-  //kesu
-  text-align: center
-  background-color: #eee
 
 
 
