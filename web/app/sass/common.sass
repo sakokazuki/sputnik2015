@@ -2,9 +2,13 @@ body
   background-color: #fff
   min-width: 1280px
   font-family: Helvetica, "Hiragino Kaku Gothic ProN", sans-serif
+  -webkit-font-smoothing: antialiased
+  &::selector
+    background: black
+    color: white
 
-  h2
-    display: none
+img
+  width: 100%
 
 #container
   position: relative
@@ -17,9 +21,6 @@ header
     +size(148,38)
     background-image: url(../img/header_img.png)
     background-size: cover
-    //kesu
-    // text-align: center
-    // background-color: #eee
 
 #menu
   position: absolute
@@ -27,21 +28,23 @@ header
   right: 53px
   z-index: 10
   text-align: right
-
+  display:inline-block
+  ol
+    width: 150px
   li
     margin-bottom: 13px
     background-color: #000
     color: #fff
+    display: inline-block
+    padding: 2px 3px
+    line-height: 90%
+    cursor: pointer
 
   .menu-img
     +size(37, 30)
     margin: 0 0 35px 104px
 
-    //kesu
-    background-color: #eee
 
-
-
-
-
-
+footer
+  height: 300px
+  background: #000

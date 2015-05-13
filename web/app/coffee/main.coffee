@@ -16,6 +16,13 @@ $(document).ready ()->
     speed2: 3
   loading.animate()
 
-
-
-
+  $("#top-slider").sliderPro
+    width: $(window).width()
+    height: $(window).height()*0.9
+    arrows: true
+    buttons: false
+    waitForLayers: true
+    autoplay: true
+    autoScaleLayers: false
+    imageScaleMode: 'cover'
+    slideDistance:150

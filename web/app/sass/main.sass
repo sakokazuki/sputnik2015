@@ -1,6 +1,6 @@
 @import mixin
 @import common
-  
+
 #main
   width: 1233px
   margin: 0 auto
@@ -8,59 +8,48 @@
 .first-view
   position: relative
   margin-bottom: 17px
+  height: 80vh
 
-  .img-container
-    +size(1141, 665)
-    margin: 0 auto
-
-    img
-      +size(1141, 665)
+  .sp-slide
+    background-position: 50% 50%
 
   .top-text
-    color: #fff
-    position: absolute
-    top: 69px
-    left: 108px
-    width: 372px
-    height: 278px
-
-    //kesu
-    background-color: rgba(255, 255, 255, 0.8)
+    width: 400px
+    height: 80%
+    padding: 35px 50px
+    img
+      width: 100%
 
 .news
-  width: 641px
+  width: 640px
   margin: 0 auto
   border-top: solid 2px #7F7C7C
   border-bottom: solid 2px #7F7C7C
   text-align: center
-  padding: 11px 0
+  padding: 10px 0
+  height: 16px
+  overflow: hidden
+  p
+    display:inline-block
+
 
 .introduce
   +size(651, 269)
   margin: 60px auto 114px
   text-align: center
   position: relative
-
-  //kesu
-  background-color: #eee
-
-  .introduce_title
-    +size(651, 86)
-    margin: 0 auto
-
-    //kesu
-    background-color: #ddd
-
   h2
-    display: none
+    width: 100%
 
   .text_container
-    position : absolute
-    bottom: 0
     font-family: "ヒラギノ明朝 Pro W3", serif
     font-size: 17px
     letter-spacing: -0.4px
-    line-height: 32px
+    line-height: 240%
+    p
+      margin: 10px 0
+    .detail
+      text-decoration: underline
 
   .text_1
     margin-bottom: 32px
@@ -74,14 +63,12 @@
   .kiji-img
     display: inline-block
     +size(201, 90)
-    background-image: url(../img/tokusyu_img.png)
     background-repeat: no-repeat
     background-size: contain
     margin: 0 auto
     vertical-align: top
 
 .page
-  background-image: url("../img/kiji.jpg")
   background-repeat: no-repeat
   +size(1233, 315)
   overflow: hidden
@@ -177,17 +164,3 @@
 .yomikomi
   +size(152, 144)
   margin: 28px auto 56px
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -15,7 +15,18 @@ $(document).ready(function() {
     speed1: 5,
     speed2: 3
   });
-  return loading.animate();
+  loading.animate();
+  return $("#top-slider").sliderPro({
+    width: $(window).width(),
+    height: $(window).height() * 0.9,
+    arrows: true,
+    buttons: false,
+    waitForLayers: true,
+    autoplay: true,
+    autoScaleLayers: false,
+    imageScaleMode: 'cover',
+    slideDistance: 150
+  });
 });
 
 /*
