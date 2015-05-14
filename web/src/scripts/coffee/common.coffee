@@ -1,4 +1,4 @@
-#common.coffee
+common = require "./common.coffee"
 
 #ellipse
 CanvasRenderingContext2D::ellipse = (_x, _y, _width, _height) ->

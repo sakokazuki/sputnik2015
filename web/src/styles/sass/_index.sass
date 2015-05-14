@@ -1,16 +1,18 @@
 
 #main
-  width: 1233px
+  width: 100%
   margin: 0 auto
+  margin-top: 50px
 
 .first-view
   position: relative
+  margin:auto
   margin-bottom: 17px
   height: 80vh
-
   .sp-slide
     background-position: 50% 50%
-
+  .sp-grab
+    cursor: pointer
   .top-text
     width: 400px
     height: 80%
@@ -56,8 +58,6 @@
   +size(359, 90)
   margin: 0px auto 54px
 
-
-
   .kiji-img
     display: inline-block
     +size(201, 90)
@@ -68,11 +68,18 @@
 
 .page
   background-repeat: no-repeat
-  +size(1233, 315)
+  background-size: cover
+  background-position: 50% 50%
+  width:86%
+  height:300px
   overflow: hidden
   display: block
+  margin: auto
   margin-bottom: 25px
   color: #fff
+  cursor: pointer
+  &:hover
+    opacity: 0.8
 
   .title-layout0
     background-color: #000

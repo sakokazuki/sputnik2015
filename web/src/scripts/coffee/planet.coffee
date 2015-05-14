@@ -1,4 +1,5 @@
 #planet.coffee
+common = require "./common.coffee"
 
 class Planet
   constructor: (arg)->
@@ -18,44 +19,44 @@ class Planet
     @speed = speed
 
   animate: ()=>
-    window.requestAnimationFrame @animate
-    ctx = @ctx
+    requestAnimationFrame @animate
+    g = @ctx
 
-    ctx.clearRect 0, 0, @w, @h
+    g.clearRect 0, 0, @w, @h
 
-    ctx.fillStyle = '#000'
-    ctx.ellipse @w/2, @h/2, 52, 52
-    ctx.fill()
+    g.fillStyle = '#000'
+    g.ellipse @w/2, @h/2, 52, 52
+    g.fill()
 
 
-    ctx.translate @w/2, @h/2 #------------------push
+    g.translate @w/2, @h/2 #------------------push
 
-    ctx.rotate -Math.PI / 6
+    g.rotate -Math.PI / 6
 
-    ctx.strokeStyle = '#000'
-    ctx.beginPath()
-    ctx.ellipse 0, 0, 124, 18
-    ctx.stroke()
+    g.strokeStyle = '#000'
+    g.beginPath()
+    g.ellipse 0, 0, 124, 18
+    g.stroke()
 
-    ctx.rotate Math.PI / 6
-    ctx.translate -@w/2, -@h/2 #------------------pop
+    g.rotate Math.PI / 6
+    g.translate -@w/2, -@h/2 #------------------pop
 
     @angle += @speed
     rw = 62.0
     rh = 9.0
     x = rw * Math.cos(@angle / 180 * Math.PI)
     y = rh * Math.sin(@angle / 180 * Math.PI)
-    ctx.translate @w/2, @h/2 #------------------push
+    g.translate @w/2, @h/2 #------------------push
 
-    ctx.rotate -Math.PI / 6
+    g.rotate -Math.PI / 6
 
-    ctx.fillStyle = '#000'
-    ctx.beginPath()
-    ctx.ellipse x, y, 20, 20
-    ctx.fill()
+    g.fillStyle = '#000'
+    g.beginPath()
+    g.ellipse x, y, 20, 20
+    g.fill()
 
-    ctx.rotate Math.PI / 6
-    ctx.translate -@w/2, -@h/2 #------------------pop
+    g.rotate Math.PI / 6
+    g.translate -@w/2, -@h/2 #------------------pop
 
 
 module?.exports = Planet

@@ -9,6 +9,7 @@ class Loading
     speed1 = if cnt.speed1 then cnt.speed1 else 0
     speed2 = if cnt.speed2 then cnt.speed2 else 0
 
+
     @canvas = document.getElementById id
     @canvas.width = width
     @canvas.height = height
@@ -20,54 +21,61 @@ class Loading
     @speed1 = speed1
     @speed2 = speed2
 
+  ###
+    こういうのを書くときのポイント
+    1.機能ごとに関数を分ける。関数は入れ子にすれば管理も簡単。その時の関数の命名は、
+      一目見て何をしてるかわかるようにする
+    2.共通化出来るものは、絶対に共通化する
+    3.同じ処理を繰り返してはだめ。forループ沢山使っていこう。
+  ###
   animate: ()=>
-    window.requestAnimationFrame @animate
-    ctx = @ctx
+    requestAnimationFrame @animate
+    g = @ctx
     w = @width
     h = @height
 
 
-    ctx.clearRect 0, 0, w, h
-    # ctx.fillStyle = '#eee'
-    # ctx.fillRect 0, 0, w, h
-    # ctx.fill()
+    g.clearRect 0, 0, w, h
 
-    ctx.fillStyle = '#000'
-    ctx.strokeStyle = '#000'
-    ctx.ellipse w/2, h/2, 50, 50
-    ctx.fill()
-    ctx.ellipse w/2, h/2, 85, 85
-    ctx.stroke()
-    ctx.ellipse w/2, h/2, 120, 120
-    ctx.stroke()
+    g.fillStyle = '#000'
+    g.strokeStyle = '#000'
+
+    #円を描く
+    for v,i in [0.3,0.5,0.8]
+      g.ellipse w/2, h/2, w*v, h*v
+      if i is 0 then g.fill() else g.stroke()
 
     @angle1 += @speed1
-    rw = 42.5
-    rh = 42.5
+    rw = w*0.3 - 5
+    rh = h*0.3 - 5
     x = rw * Math.cos(@angle1 / 180 * Math.PI)
     y = rh * Math.sin(@angle1 / 180 * Math.PI)
-    ctx.translate w/2, h/2 #------------------push
+    g.translate w/2, h/2
+    #------------------push
 
-    ctx.fillStyle = '#000'
-    ctx.beginPath()
-    ctx.ellipse x, y, 10, 10
-    ctx.fill()
 
-    ctx.translate -w/2, -h/2 #------------------pop
+    g.beginPath()
+    g.ellipse x, y, 10, 10
+    g.fill()
+
+    #------------------pop
+    g.translate -w/2, -h/2
 
     @angle2 += @speed2
-    rw = 60
-    rh = 60
+    rw = w*0.5 - 10
+    rh = h*0.5 - 10
     x = rw * Math.cos(@angle2 / 180 * Math.PI)
     y = rh * Math.sin(@angle2 / 180 * Math.PI)
-    ctx.translate w/2, h/2 #------------------push
+    g.translate w/2, h/2
+    #------------------push
 
-    ctx.fillStyle = '#000'
-    ctx.beginPath()
-    ctx.ellipse x, y, 20, 20
-    ctx.fill()
+    g.fillStyle = '#000'
+    g.beginPath()
+    g.ellipse x, y, 20, 20
+    g.fill()
 
-    ctx.translate -w/2, -h/2 #------------------pop
+    g.translate -w/2, -h/2
+    #------------------pop
 
 
 module?.exports = Loading

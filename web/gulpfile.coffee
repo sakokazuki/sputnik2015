@@ -29,6 +29,7 @@ gulp.task 'browserify', ->
   .pipe plumber()
   .pipe source 'bundle.js'
   .pipe buffer()
+  .pipe plumber()
   .pipe sourcemaps.init
     loadMaps: true
   .pipe sourcemaps.write()
@@ -52,7 +53,7 @@ gulp.task 'copy', ->
 # Browserリロードと監視
 # ------------------------------------------------
 browserSync = require('browser-sync').create()
-reload      = browserSync.reload;
+reload      = browserSync.reload
 gulp.task 'watch', ->
   browserSync.init
     server: "./build"
