@@ -22,12 +22,12 @@ class Planet
     ctx = @ctx
 
     ctx.clearRect 0, 0, @w, @h
-    
+
     ctx.fillStyle = '#000'
     ctx.ellipse @w/2, @h/2, 52, 52
     ctx.fill()
 
-    
+
     ctx.translate @w/2, @h/2 #------------------push
 
     ctx.rotate -Math.PI / 6
@@ -39,7 +39,7 @@ class Planet
 
     ctx.rotate Math.PI / 6
     ctx.translate -@w/2, -@h/2 #------------------pop
-    
+
     @angle += @speed
     rw = 62.0
     rh = 9.0
@@ -58,3 +58,4 @@ class Planet
     ctx.translate -@w/2, -@h/2 #------------------pop
 
 
+module?.exports = Planet

@@ -70,3 +70,4 @@ class Loading
     ctx.translate -w/2, -h/2 #------------------pop
 
 
+module?.exports = Loading

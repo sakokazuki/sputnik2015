@@ -17,10 +17,30 @@
   },
   "homepage": "https://github.com/yohawing/sputnik2015",
   "devDependencies": {
+    "browser-sync": "^2.7.1",
     "browserify": "^10.1.3",
+    "coffee-script": "^1.9.2",
     "coffeeify": "^1.1.0",
     "gulp": "^3.8.11",
+    "gulp-jade": "^1.0.0",
     "gulp-plumber": "^1.0.0",
-    "node-sass": "^3.0.0"
+    "gulp-sass": "^2.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "node-sass": "^3.0.0",
+    "underscore": "^1.8.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "path": {
+    "src": {
+      "base": "./src",
+      "scripts": "./src/scripts",
+      "styles": "./src/styles"
+    },
+    "build": {
+      "js": "./build/assets/js",
+      "css": "./build/assets/css",
+      "html": "./build/"
+    }
   }
 }

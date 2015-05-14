@@ -1,3 +1,6 @@
+common = require "./common.coffee"
+Planet = require "./planet.coffee"
+Loading = require "./loading.coffee"
 #test
 $(document).ready ()->
 
