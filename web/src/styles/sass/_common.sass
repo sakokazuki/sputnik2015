@@ -4,9 +4,19 @@ body
   min-width: 1000px
   font-family: Helvetica, "Hiragino Kaku Gothic ProN", sans-serif
   -webkit-font-smoothing: antialiased
-  &::selector
-    background: black
-    color: white
+  +prohibit-selection()
+
+::selection
+  background: black
+  color: white
+  opacity:1
+
+
+#main
+  width: 100%
+  margin: 0 auto
+  margin-top: 50px
+
 
 img
   width: 100%

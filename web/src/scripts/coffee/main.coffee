@@ -2,10 +2,11 @@
 Planet = require "./planet.coffee"
 Loading = require "./loading.coffee"
 GSAP = require("./gsap.coffee")
+howler = require "howler"
 
 #test
 $(document).ready ()->
-
+  console.log howler
   planet = new Planet
     id: "canvas_plnaet"
     width: 153
@@ -24,11 +25,13 @@ $(document).ready ()->
   $body = $("body")
   $body.css({opacity:0})
 
+  # animationのテスト
   TweenMax.to($body, 1.6, {opacity:1.0})
 
+  # sliderの実装
   $("#top-slider").sliderPro
-    width: $(window).width()*0.86
-    height: $(window).height()*0.8
+    width: $(window).width()*0.90
+    height: $(window).height()*0.88
     arrows: false
     buttons: false
     waitForLayers: true
@@ -37,5 +40,5 @@ $(document).ready ()->
     imageScaleMode: 'cover'
     slideDistance:150
 
-  $(".page").on "click", ->
+  $("*[href]").on "click", ->
     location.href = $(this).attr "href"
