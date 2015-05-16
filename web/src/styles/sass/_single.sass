@@ -1,33 +1,37 @@
 @import mixin
 @import common
 
+
 .single
-
-  #main
-    width: 1140px
-    margin: 0 auto
-
   .first-view
-    position: relative
-    margin-bottom: 10px
-
+    position: fixed
+    width:100%
+    z-index: 1
     .img-container
-      +size(1140, 816)
       margin: 0 auto
+      width:90%
 
-      img
-        +size(1140, 816)
+article.article
+  z-index: 2
+  width:700px
+  margin:auto
+  margin-bottom: 200px
+  position: relative
+  padding: 1px 0px
 
-    .top-text
-      +size(696, 212)
+  hgroup
+    height:80vh
+    position: relative
+    margin-bottom: 200px
+    .title-layout
+      +verticle-center()
+      width: 70%
+      height: 85px
+      padding: 20px
       color: #fff
-      position: absolute
-      top: 226px
-      left: 223px
       background-color: rgba(0, 0, 0, 1)
       text-align: center
       letter-spacing: 1px
-
       .date
         font-size: 14px
         margin-top: 52px
@@ -42,55 +46,75 @@
         font-size: 32px
         font-weight: 600
         letter-spacing: 3px
+  .text-container
+    font-family: "YuGothic"
+    background: #fff
+    padding: 40px
+    font-size: 18px
+    -webkit-font-smoothing: subpixel-antialiased
+    line-height: 170%
+    h1:before
+      content:"《h1は使っちゃダメ！》"
+    h2
+      font-size:24px
+      font-weight:bold
+      margin: 60px auto 20px
+    p
+      margin: 10px 0
+    img
+      margin: 70px auto
+      max-width: 100%
+      width: inherit
+      display: block
+      transform:scale(1.2)
 
-  .scroll
-    +size(57, 38)
-    margin: 0 auto 57px
+  .text_footer
+    margin-top: 130px
+    text-align: center
+    .notice
+      font-weight:bold
+      font-size:18px
+    .choose_box
+      margin: 30px auto 20px
+      color:white
+      p
+        margin:5px 0
+      .choose0
+        width: 250px
+        display: inline-block
+        background-color: #ED1C24
+        margin-right:30px
+      .choose1
+        width: 250px
+        display: inline-block
+        background-color: #0071BC
+        margin:auto
 
-    //kesu
-    background-color: #eee
+    .border
+      border-top: solid 1px #000
 
-  .article_autor
-    width: 1140px
-    background-image: url("../img/top0.jpg")
-    padding: 58px 0 42px
+    .share
+      margin-top: 18px
 
-    .article_container
-      width: 700px
-      background-color: #fff
-      margin: 0px auto 0px
-      padding: 46px 37px 61px
 
-      .text_footer
-        margin-top: 30px
 
-        p
+.scroll
+  +size(57, 38)
+  margin: 0 auto 57px
 
-          text-align: center
+  //kesu
+  background-color: #eee
 
-        .choose_box
-          margin: 21px 74px 26px
-          color: #fff
-          p
-            margin: 4px
-        .choose0
-          +size(251, 32)
-          display: inline-block
-          background-color: #ED1C24
-          margin-right: 45px
-        .choose1
-          +size(251, 32)
-          display: inline-block
-          background-color: #0071BC
+.article.fasdfa
+  .article_container
+    width: 700px
+    background-color: #fff
+    margin: 0px auto 0px
+    padding: 46px 37px 61px
 
-        .border
-          border-top: solid 1px #000
 
-        .share
-          margin-top: 18px
-
-  .back
-    +size(57, 38)
-    margin: 10px auto
-    //kesu
-    background-color: #eee
+.back
+  +size(57, 38)
+  margin: 10px auto
+  //kesu
+  background-color: #eee

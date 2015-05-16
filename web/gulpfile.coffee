@@ -9,8 +9,8 @@ sourcemaps = require 'gulp-sourcemaps'
 gulp.task 'sass', ->
   sass = require 'gulp-sass'
   gulp.src "#{config.path.src.styles}/sass/**/*.{sass,scss}"
-    .pipe sourcemaps.init()
     .pipe plumber()
+    .pipe sourcemaps.init()
     .pipe sass()
     .pipe sourcemaps.write()
     .pipe gulp.dest config.path.build.css
@@ -26,7 +26,6 @@ gulp.task 'browserify', ->
     debug: true
   .transform 'coffeeify'
   .bundle()
-  .pipe plumber()
   .pipe source 'bundle.js'
   .pipe buffer()
   .pipe plumber()
