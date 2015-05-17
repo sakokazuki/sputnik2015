@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.7.1",
     "browserify": "^10.1.3",
+    "chalk": "^1.0.0",
     "coffee-script": "^1.9.2",
     "coffeeify": "^1.1.0",
     "gulp": "^3.8.11",
@@ -28,6 +29,7 @@
     "gulp-sourcemaps": "^1.5.2",
     "howler": "^1.1.26",
     "node-sass": "^3.0.0",
+    "serve-static": "^1.9.3",
     "underscore": "^1.8.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
