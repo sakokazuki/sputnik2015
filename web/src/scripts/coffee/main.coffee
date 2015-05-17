@@ -12,6 +12,7 @@ $(document).ready ()->
     width: 153
     height: 90
     speed: 0.5
+    color: '#000'
   planet.animate()
 
   loading = new Loading
@@ -20,7 +21,25 @@ $(document).ready ()->
     height: 100
     speed1: 9
     speed2: 6
+    color: '#000'
   loading.animate()
+
+  # planet-sp = new Planet
+  #   id: "canvas_plnaet-sp"
+  #   width: 153
+  #   height: 90
+  #   speed: 0.5
+  #   color: '#fff'
+  # planet-sp.animate()
+
+  # loading-sp = new Loading
+  #   id: "canvas_loading-sp"
+  #   width: 100
+  #   height: 100
+  #   speed1: 9
+  #   speed2: 6
+  #   color: '#fff'
+  # loading-sp.animate()
 
   $body = $("body")
   $body.css({opacity:0})
@@ -39,6 +58,17 @@ $(document).ready ()->
     autoScaleLayers: false
     imageScaleMode: 'cover'
     slideDistance:150
+
+  $("#top-slider-sp").sliderPro
+    # width: $(window).width()
+    # height: $(window).height()
+    # arrows: false
+    # buttons: false
+    # waitForLayers: true
+    # autoplay: true
+    # autoScaleLayers: false
+    # imageScaleMode: 'cover'
+    # slideDistance:150
 
   $("*[href]").on "click", ->
     location.href = $(this).attr "href"

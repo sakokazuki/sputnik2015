@@ -8,6 +8,7 @@ class Planet
     width = if cnt.width then cnt.width else 0
     height = if cnt.height then cnt.height else 0
     speed = if cnt.speed then cnt.speed else 0
+    color = if cnt.color then cnt.color else 0
 
     @canvas = document.getElementById id
     @canvas.width = width
@@ -17,6 +18,7 @@ class Planet
     @h = height
     @angle = 0.0
     @speed = speed
+    @color = color
 
   animate: ()=>
     requestAnimationFrame @animate
@@ -24,7 +26,7 @@ class Planet
 
     g.clearRect 0, 0, @w, @h
 
-    g.fillStyle = '#000'
+    g.fillStyle = @color
     g.ellipse @w/2, @h/2, 52, 52
     g.fill()
 
@@ -33,7 +35,7 @@ class Planet
 
     g.rotate -Math.PI / 6
 
-    g.strokeStyle = '#000'
+    g.strokeStyle = @color
     g.beginPath()
     g.ellipse 0, 0, 124, 18
     g.stroke()
@@ -50,7 +52,7 @@ class Planet
 
     g.rotate -Math.PI / 6
 
-    g.fillStyle = '#000'
+    g.fillStyle = @color
     g.beginPath()
     g.ellipse x, y, 20, 20
     g.fill()
